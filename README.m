@@ -2,9 +2,9 @@
 Infrared and Visible light image Registration Research Based on the Combination of Phase Consistency and Edge Extreme Points with SIFT Algorithm
 
 说明：
-main.py脚本为主脚本，运行main.py脚本时,输入参数--des_way 2 表示采用pytorch张量形式并用cuda计算，可以加快计算速度，强烈建议采用。
+main.py脚本为主脚本，运行main.py脚本时,输入参数--des_way 2 表示采用pytorch张量形式并用cuda计算，可以加快计算速度，强烈建议采用，--data data/(数据文件名名称如similar）。
 
-数据准备：data文件夹的images文件夹用来存放原始图片，其中images1存放原始红外图片，images2存放原始可见光图片
+数据准备：data文件夹的images(或者其他名字的文件夹）文件夹用来存放原始图片，其中images1存放原始红外图片，images2存放原始可见光图片
 
 重要脚本说明：
 
@@ -34,13 +34,12 @@ show.py——可视化脚本
 
 Instructions:
 
-The main script is main.py, which serves as the primary script for the project. When running main.py, input parameter 
---des_way 2 indicates the use of PyTorch tensors for faster computation with CUDA. It is highly recommended to utilize 
-this option for accelerated processing.
+main.py script is the main script. When running the main.py script, input parameter
+--des_way 2 indicates the use of PyTorch tensor format and CUDA computation, which can accelerate the calculation speed. It is strongly recommended to use this option. Additionally,
+--data data/(data file name, such as "similar") is required.
 
-Data Preparation: The images folder within the data directory is designated for storing original images. Specifically, 
-images1 contains the original infrared images, while images2 holds the original visible light images.
-
+Data preparation: The "images" folder (or any other named folder) within the data directory is used to store original images. Within this folder, "images1" stores the original infrared images, 
+while "images2" stores the original visible light images.
 Key Script Descriptions:
 
 main.py: Main script of the project.
